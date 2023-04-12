@@ -28,9 +28,17 @@ Embora o objetivo final seja o aprimoramento do modelo, as etapas intermediária
 
 Para o desenvolvimento deste datathon estão disponibilizados os seguintes conjuntos de dados:
 
-### Genótipos SABE
+### Genótipos da coorte alvo
 
 ### Variáveis Genéticas
 
 ### Variáveis Clínicas
+Arquivo datathon-pheno.tsv
+
+| Variável         | Tipo | Descrição |
+|--------------|:-----:|-----------:|
+| target_phenotype |  int |        1 para casos e 0 para controles |
+| bmi      |  float |          IMC do indivíduo |
+| age      |  int |          Idade do indivíduo |
+| sex      |  character |          M para homens, F para mulheres |
 
