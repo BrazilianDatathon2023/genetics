@@ -32,7 +32,7 @@ Para o desenvolvimento deste datathon estão disponibilizados os seguintes conju
 Disponibilizados no arquivo target_cohort.vcf.gz (genoma de referência - hg38). Contém os seguintes campos:
 
 | Variável         | Descrição | 
-|--------------|:-----:|
+|--------------|:-----|
 | CHROM |  O cromossomo no qual a variante está localizada.  |
 | POS      |  Posição (baseada em 1) da variante na sequência especificada. |
 | ID      |  O identificador da variação com base no rsID do dbSNP. |
