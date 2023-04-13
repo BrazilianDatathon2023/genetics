@@ -49,7 +49,7 @@ Disponibilizados no arquivo target_cohort.vcf.gz (genoma de referência - hg38).
 - Arquivo tabular de pesos do modelo de PRS (PGS002296_hmPOS_GRCh38.tsv) com as seguintes colunas:
 
 | Variável         | Tipo | Descrição |
-|--------------|:-----:|:-----------:|
+|--------------|:-----:|:-----------|
 | SNPID |  character |       Identificador único do SNP alvo (rsid com base no banco dbsnp) |
 | CHROMOSOME      |  character |          Cromossomo no qual o SNP está localizado |
 | POS      |  int |         Posição do SNP no cromossomo |
@@ -65,7 +65,7 @@ Disponibilizados no arquivo target_cohort.vcf.gz (genoma de referência - hg38).
 Arquivo datathon-pheno.tsv
 
 | Variável         | Tipo | Descrição |
-|--------------|:-----:|:-----------:|
+|--------------|:-----:|:-----------|
 | target_phenotype |  int |        1 para casos e 0 para controles |
 | bmi      |  float |          IMC do indivíduo |
 | age      |  int |          Idade do indivíduo |
