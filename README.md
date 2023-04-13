@@ -29,14 +29,43 @@ Embora o objetivo final seja o aprimoramento do modelo, as etapas intermediária
 Para o desenvolvimento deste datathon estão disponibilizados os seguintes conjuntos de dados:
 
 ### Genótipos da coorte alvo
+Disponibilizados no arquivo target_cohort.vcf.gz (genoma de referência - hg38). Contém os seguintes campos:
+
+| Variável         | Descrição | 
+|--------------|:-----:|
+| CHROM |  O cromossomo no qual a variante está localizada.  |
+| POS      |  Posição (baseada em 1) da variante na sequência especificada. |
+| ID      |  O identificador da variação com base no rsID do dbSNP. |
+| REF      |  A base encontrada no genoma de referência em determinada posição. |
+| ALT      |  Alelos alternativos naquela posição. |
+| QUAL      |  Escore de qualidade dos alelos |
+| FILTER      |  Uma flag indicando "PASS" para variantes que passaram em filtros de qualidade ou indicando qual conjunto de filtros a variante falhou. |
+| INFO      |  Uma lista de pares chave-valor (campos) descrevendo a variante. |
+| SAMPLES      |  Genótipo das amostras. Há uma coluna para cada amostra |
+
 
 ### Variáveis Genéticas
+
+- Arquivo tabular de pesos do modelo de PRS (PGS002296_hmPOS_GRCh38.tsv) com as seguintes colunas:
+
+| Variável         | Tipo | Descrição |
+|--------------|:-----:|:-----------:|
+| SNPID |  character |       Identificador único do SNP alvo (rsid com base no banco dbsnp) |
+| CHROMOSOME      |  character |          Cromossomo no qual o SNP está localizado |
+| POS      |  int |         Posição do SNP no cromossomo |
+| EFFECT_ALLELE      |  character |          Alelo que possivelmente atribuí o risco, indicado pelo estudo de GWAS |
+| NON_EFFECT_ALLELE      |  character |          Alelo que não foi associado ao risco |
+| P-VALUE      |  float |          P-valor da associação entre o alelo efetor e o fenótipo |
+| BETA      |  float |          Tamanho de efeito do SNP |
+
+
+- Arquivo tabular com a anotação funcional dos SNPs: [Data dic]
 
 ### Variáveis Clínicas
 Arquivo datathon-pheno.tsv
 
 | Variável         | Tipo | Descrição |
-|--------------|:-----:|-----------:|
+|--------------|:-----:|:-----------:|
 | target_phenotype |  int |        1 para casos e 0 para controles |
 | bmi      |  float |          IMC do indivíduo |
 | age      |  int |          Idade do indivíduo |
