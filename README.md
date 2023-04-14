@@ -68,7 +68,7 @@ Disponibilizados no arquivo target_cohort.vcf.gz (genoma de referência hg38). C
 | BETA      |  float |          Tamanho de efeito do SNP |
 
 
-- Arquivo tabular com a anotação funcional dos SNPs (functional-snps.tsv)
+- Arquivo tabular com a anotação funcional dos SNPs (snps-functional-classification.tsv)
 - Arquivo tabular contendo SNPs em desequilíbrio de ligação com os SNPs contidos no arquivo de pesos do modelo (ld-snps.tsv) 
 
 A descrição dos arquivos com a anotação funcional e os SNPs em LD estão no seguinte [dicionário de dados](https://docs.google.com/document/d/1KSfq8JnPRybS97A9SVZvDkmxt-qrtoA2-Sz-JZ9bhmA/edit?usp=sharing)
