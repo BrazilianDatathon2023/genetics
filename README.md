@@ -14,6 +14,10 @@ REFERÊNCIAS:
 
 O PRS tem sido utilizado para estudar a predisposição genética à hipertensão, uma das principais causas de morbidade e mortalidade no mundo. O PRS tem sido capaz de prever o risco de hipertensão em indivíduos e pode ser útil na prevenção e tratamento dessa doença. No entanto, é importante lembrar que o PRS é apenas uma ferramenta e deve ser interpretado juntamente com outros fatores de risco, como o histórico familiar e o estilo de vida, para uma avaliação mais completa do risco individual.
 
+O PRS que será utilizado neste projeto foi desenvolvido, como a maioria dos PRSs, a partir de dados provindos de populacões europeias. Quando aplicado em indivíduos dessa populacão, obtemos os seguintes resultados:
+
+![auroc](imgs/auroc.png)
+
 REFERÊNCIAS:
 
 - [Dissecting the Polygenic Basis of Primary Hypertension: Identification of Key Pathway-Specific Components.](https://doi.org/10.3389/fcvm.2022.814502)
