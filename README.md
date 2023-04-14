@@ -16,7 +16,8 @@ O PRS tem sido utilizado para estudar a predisposição genética à hipertensã
 
 O PRS que será utilizado neste projeto foi desenvolvido, como a maioria dos PRSs, a partir de dados provindos de populacões europeias. Quando aplicado em indivíduos dessa populacão, obtemos os seguintes resultados:
 
-![auroc|200](imgs/htn_auroc_ukbb.png){: width="50%"}
+ <img src="imgs/htn_auroc_ukbb.png" alt="alt text" width="200px">
+![auroc|200]()
 ![density|200](imgs/htn_density_ukbb.png)
 
 
