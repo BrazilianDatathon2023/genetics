@@ -33,7 +33,8 @@ Embora o objetivo final seja o aprimoramento do modelo, as etapas intermediária
 
 ## Datasets
 
-Para o desenvolvimento deste datathon estão disponibilizados os seguintes conjuntos de dados:
+Para o desenvolvimento deste datathon estão disponibilizados os seguintes conjuntos de dados em um bucket S3 da AWS. 
+O tutorial para acesso aos dados está disponível no canal do slack.
 
 ### Genótipos da coorte alvo
 
