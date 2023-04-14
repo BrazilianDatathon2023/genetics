@@ -14,10 +14,10 @@ REFERÊNCIAS:
 
 O PRS tem sido utilizado para estudar a predisposição genética à hipertensão, uma das principais causas de morbidade e mortalidade no mundo. O PRS tem sido capaz de prever o risco de hipertensão em indivíduos e pode ser útil na prevenção e tratamento dessa doença. No entanto, é importante lembrar que o PRS é apenas uma ferramenta e deve ser interpretado juntamente com outros fatores de risco, como o histórico familiar e o estilo de vida, para uma avaliação mais completa do risco individual.
 
-O PRS que será utilizado neste projeto foi desenvolvido, como a maioria dos PRSs, a partir de dados provindos de populacões europeias. Quando aplicado em indivíduos dessa populacão, obtemos os seguintes resultados:
+O PRS que será utilizado neste projeto foi desenvolvido, como a maioria dos PRSs, a partir de dados provenientes de populacões europeias. Quando aplicado em indivíduos dessa populacão, obtemos os seguintes resultados:
 
- <img src="imgs/htn_auroc_ukbb.png" alt="alt text" width="300px">
- <img src="iimgs/htn_density_ukbb.png" alt="alt text" width="300px">
+ <img src="imgs/htn_auroc_ukbb.png" alt=" " width="300px">
+ <img src="iimgs/htn_density_ukbb.png" alt=" " width="300px">
 
 
 
@@ -36,7 +36,8 @@ Embora o objetivo final seja o aprimoramento do modelo, as etapas intermediária
 Para o desenvolvimento deste datathon estão disponibilizados os seguintes conjuntos de dados:
 
 ### Genótipos da coorte alvo
-Disponibilizados no arquivo target_cohort.vcf.gz (genoma de referência - hg38). Contém os seguintes campos:
+
+Disponibilizados no arquivo target_cohort.vcf.gz (genoma de referência hg38). Contém os seguintes campos:
 
 | Variável         | Descrição | 
 |--------------|:-----|
@@ -69,7 +70,7 @@ Disponibilizados no arquivo target_cohort.vcf.gz (genoma de referência - hg38).
 - Arquivo tabular com a anotação funcional dos SNPs (functional-snps.tsv)
 - Arquivo tabular contendo SNPs em desequilíbrio de ligação com os SNPs contidos no arquivo de pesos do modelo (ld-snps.tsv) 
 
-A descrição dos arquivos com a anotação funcional e os SNPs em LD estão no seguinte [dicionário de dados]()
+A descrição dos arquivos com a anotação funcional e os SNPs em LD estão no seguinte [dicionário de dados](https://docs.google.com/document/d/1KSfq8JnPRybS97A9SVZvDkmxt-qrtoA2-Sz-JZ9bhmA/edit?usp=sharing)
 
 ### Variáveis Clínicas
 Arquivo datathon-pheno.tsv
