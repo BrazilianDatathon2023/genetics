@@ -16,8 +16,7 @@ O PRS tem sido utilizado para estudar a predisposição genética à hipertensã
 
 O PRS que será utilizado neste projeto foi desenvolvido, como a maioria dos PRSs, a partir de dados provindos de populações europeias. Quando aplicado em indivíduos dessa população, obtemos os seguintes resultados:
 
- <img src="imgs/htn_auroc_ukbb.png" alt="auroc" width="300px">
- <img src="imgs/htn_density_ukbb.png" alt="density" width="300px">
+ <img src="imgs/htn_auroc_ukbb.png" alt="auroc" width="300px">  <img src="imgs/htn_density_ukbb.png" alt="density" width="300px">
 
 É esperado que ao aplicar esse mesmo conjunto de pesos em uma populacão diferente da populacão de origem do PRS ocorra uma perda significativa do poder preditivo do PRS.
 
@@ -94,6 +93,10 @@ Arquivo datathon-pheno.tsv
 Para auxiliar o desenvolvimento dos algoritmos alguns scripts foram fornecidos.
 
 - **`prs_calculator.py`** É um script python que calcula a soma do PRS para cada individuo usando um dicionário de pesos e um arquivo VCF.
-Esse cáculo é feito da maneira mais comum de se agregar o efeito de cada variante: $\sum_{i=1}^n w_i * dosage_i$.
+Esse cáculo é feito da maneira mais comum de se agregar o efeito de cada variante: 
+
+```math
+\sum_{i=1} w_i * dosage_i
+```
 
 - **`load_effect_sizes_file.py`** É um script python que exemplifica um modo de obter o dicionário de pesos utilizado no `prs_calculator.py`.
