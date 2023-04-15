@@ -93,7 +93,7 @@ Arquivo datathon-pheno.tsv
 | age      |  int |          Idade do indivíduo |
 | sex      |  character |          M para homens, F para mulheres |
 | pc1 - pc5      |  float |          Componentes principais genômicos |
-| s     |  cjaracter |          ID da amostra |
+| s     |  character |          ID da amostra |
 
 
 
