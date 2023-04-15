@@ -92,6 +92,10 @@ Arquivo datathon-pheno.tsv
 | bmi      |  float |          IMC do indivíduo |
 | age      |  int |          Idade do indivíduo |
 | sex      |  character |          M para homens, F para mulheres |
+| pc1 - pc5      |  float |          Componentes principais genômicos |
+| s     |  cjaracter |          ID da amostra |
+
+
 
 ## Scripts
 
