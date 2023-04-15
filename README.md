@@ -14,12 +14,12 @@ REFERÊNCIAS:
 
 O PRS tem sido utilizado para estudar a predisposição genética à hipertensão, uma das principais causas de morbidade e mortalidade no mundo. O PRS tem sido capaz de prever o risco de hipertensão em indivíduos e pode ser útil na prevenção e tratamento dessa doença. No entanto, é importante lembrar que o PRS é apenas uma ferramenta e deve ser interpretado juntamente com outros fatores de risco, como o histórico familiar e o estilo de vida, para uma avaliação mais completa do risco individual.
 
-O PRS que será utilizado neste projeto foi desenvolvido, como a maioria dos PRSs, a partir de dados provenientes de populacões europeias. Quando aplicado em indivíduos dessa populacão, obtemos os seguintes resultados:
+O PRS que será utilizado neste projeto foi desenvolvido, como a maioria dos PRSs, a partir de dados provindos de populações europeias. Quando aplicado em indivíduos dessa população, obtemos os seguintes resultados:
 
- <img src="imgs/htn_auroc_ukbb.png" alt=" " width="300px">
- <img src="iimgs/htn_density_ukbb.png" alt=" " width="300px">
+ <img src="imgs/htn_auroc_ukbb.png" alt="auroc" width="300px">
+ <img src="imgs/htn_density_ukbb.png" alt="density" width="300px">
 
-
+É esperado que ao aplicar esse mesmo conjunto de pesos em uma populacão diferente da populacão de origem do PRS ocorra uma perda significativa do poder preditivo do PRS.
 
 REFERÊNCIAS:
 
@@ -27,18 +27,24 @@ REFERÊNCIAS:
 
 ## Sugestão de Projetos
 
-O objetivo final do projeto é aprimorar um classificador de indivíduos hipertensos e não hipertensos utilizando como componente genético o PRS.
+O objetivo final do projeto é **aprimorar um classificador de indivíduos hipertensos e não hipertensos utilizando como componente genético o PRS**.
 
 Embora o objetivo final seja o aprimoramento do modelo, as etapas intermediárias também serão levadas em conta nos critérios de avaliacão.
 
+Como tarefas intermediárias sugerimos:
+
+- Compare a distribuição do seu modelo de PRS entre casos e controle;
+- Qual o AUC do seu modelo utilizando apenas o PRS?
+- Qual o AUC do seu modelo utilizando PRS com as variáveis clínicas?
+
 ## Datasets
 
-Para o desenvolvimento deste datathon estão disponibilizados os seguintes conjuntos de dados em um bucket S3 da AWS. 
+Para o desenvolvimento deste datathon estão disponibilizados os seguintes conjuntos de dados em um bucket S3 da AWS.
 O tutorial para acesso aos dados está disponível no canal do slack.
 
 ### Genótipos da coorte alvo
 
-Disponibilizados no arquivo target_cohort.vcf.gz (genoma de referência hg38). Contém os seguintes campos:
+Disponibilizados no arquivo `target_cohort.vcf.gz` (genoma de referência hg38). Contém os seguintes campos:
 
 | Variável         | Descrição | 
 |--------------|:-----|
@@ -83,3 +89,11 @@ Arquivo datathon-pheno.tsv
 | age      |  int |          Idade do indivíduo |
 | sex      |  character |          M para homens, F para mulheres |
 
+## Scripts
+
+Para auxiliar o desenvolvimento dos algoritmos alguns scripts foram fornecidos.
+
+- **`prs_calculator.py`** É um script python que calcula a soma do PRS para cada individuo usando um dicionário de pesos e um arquivo VCF.
+Esse cáculo é feito da maneira mais comum de se agregar o efeito de cada variante: $\sum_{i=1}^n w_i * dosage_i$.
+
+- **`load_effect_sizes_file.py`** É um script python que exemplifica um modo de obter o dicionário de pesos utilizado no `prs_calculator.py`.
