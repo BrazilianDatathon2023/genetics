@@ -36,6 +36,11 @@ Como tarefas intermediárias sugerimos:
 - Qual o AUC do seu modelo utilizando apenas o PRS?
 - Qual o AUC do seu modelo utilizando PRS com as variáveis clínicas?
 
+## Tutoriais AWS
+
+- [Criação de criação de contas na AWS e aplicação do Voucher](https://docs.google.com/document/u/0/d/1fX8qSWV7SHx0MzLK-743Q4U7Th8GvYg9VKOJjMI9eJs)
+- [Acesso aos dados na AWS - IV MIT Critical Data HIAE Datathon in Healthcare](https://docs.google.com/document/d/1IHHJfFO09KoIcgKx2q9jAZelRqf9DlxlAARcGweYU7g)
+
 ## Datasets
 
 Para o desenvolvimento deste datathon estão disponibilizados os seguintes conjuntos de dados em um bucket S3 da AWS.
